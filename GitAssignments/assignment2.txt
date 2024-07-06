@@ -1,0 +1,11 @@
+Branch creation and switching
+//create a branch called feature
+git branch feature
+//switch the branch
+git checkout feature
+//create file
+vi assignment2.txt
+//add files
+git add .
+//commit
+git commit -m "second commit on assignment2.txt in feature branch"

@@ -1,0 +1,14 @@
+Hi welcome to git assignment1
+to add the first commit,
+// first create our directory
+mkdir Git
+//use the directory path
+cd Git
+//create new git empty repository
+git init
+// create a text file 
+vi assignment1.txt
+// to add the files to repository
+git add .
+git commit -m "First commit"
+Thank You

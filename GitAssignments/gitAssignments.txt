@@ -1,0 +1,29 @@
+Assignment 1: Initialize a new Git repository in a directory of your choice. Add a simple text file to the repository and make the first commit.
+mkdir Git
+cd Git
+git init
+vi assignment1.txt
+git add .
+git commit" -m "first commit"
+
+
+
+
+Assignment 2: Branch Creation and Switching
+Create a new branch named 'feature' and switch to it. Make changes in the 'feature' branch and commit them.
+git branch feature
+git checkout feature
+vi assignment2.txt
+git add .
+git commit -m "second commit on assignment2.txt in feature branch"
+
+
+
+Assignment 3: Feature Branches and Hotfixes
+Create a 'hotfix' branch to fix an issue in the main code. Merge the 'hotfix' branch into 'main' ensuring that the issue is resolved.
+git checkout -b hotfix-branch master
+git add .
+git commit -m "Fixted the issue"
+git checkout master
+git merge hotfix-branch
+
