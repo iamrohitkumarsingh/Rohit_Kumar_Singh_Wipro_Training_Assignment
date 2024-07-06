@@ -1,0 +1,10 @@
+uBridge version 0.9.18 running with libpcap version 1.9.1 (with TPACKET_V3)
+Hypervisor TCP control server started (IP 0.0.0.0 port 35393).
+UDP tunnel connecting from local port 20003 to IPv4 address 127.0.0.1 on port 20002
+UDP tunnel connecting from local port 20000 to IPv4 address 127.0.0.1 on port 20001
+Source NIO listener thread for DYNAMIPS-20002-20003 has started
+Destination NIO listener thread for DYNAMIPS-20002-20003 has started
+UDP tunnel connecting from local port 20009 to IPv4 address 127.0.0.1 on port 20008
+UDP tunnel connecting from local port 20006 to IPv4 address 127.0.0.1 on port 20007
+Source NIO listener thread for DYNAMIPS-20008-20009 has started
+Destination NIO listener thread for DYNAMIPS-20008-20009 has started
