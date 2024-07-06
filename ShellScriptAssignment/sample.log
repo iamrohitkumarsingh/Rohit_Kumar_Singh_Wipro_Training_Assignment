@@ -1,0 +1,5 @@
+[2023-05-18 12:46:12] INFO: System Started
+[2023-05-18 12:46:22] ERROR: Failed to load configuration
+[2023-05-18 12:46:28] WARN: Low disk space
+[2023-05-18 12:46:32] ERROR: Unable to connect to database
+[2023-05-18 12:46:43] INFO: User login successful
