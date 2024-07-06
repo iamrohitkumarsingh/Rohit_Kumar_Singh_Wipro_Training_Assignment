@@ -1,0 +1,47 @@
+Assignment 2 : Design a database schema for a library system, including tables, fields, and constraints like NOT NULL, UNIQUE, and CHECK. Include primary and foreign keys to establish relationships between tables.
+
+SELECT * FROM TAB;
+
+create table member( memberid number primary key, name varchar(20) not null, address varchar(100), mobile varchar(10) unique, email varchar(20) unique not null);
+
+desc member;
+
+insert into member values(1,'Deepika Naik', 'Honnavar, karnataka', 9876543210,'deepika@wipro.com');
+
+insert into member values(2,'Priyanka Naik', 'Honnavar, karnataka', 9876543211,'priyanka@wipro.com');
+
+insert into member values(3,'Aishwarya S S', 'chikkamagaluru, karnataka', 9876543111,'aishwarya@wipro.com');
+
+insert into member values(4,'Punya', 'Kodagu, karnataka', 9876543200,'punya@wipro.com');
+
+insert into member values(5,'Niveditha', 'JogFalls, karnataka', 9876543000,'niveditha@wipro.com');
+
+select * from member;
+
+create table category1(categoryId number primary key, name varchar(30) not null);
+
+desc category1;
+
+insert into category1 values(1,'Fiction');
+
+insert into category1 values(2,'non Fiction');
+
+select * from category1;
+
+create table book( bookid number primary key, title varchar(50) not null, author varchar(20) not null, publisher varchar(20) not null,YearofPublication number CHECK (YearofPublication>0), categoryId references category1(categoryId));
+
+insert into book values(1, 'Educated', 'Tara Westover', 'Random House', 2018, 1);
+
+insert into book values(2, 'Beloved', 'Toni morrison', 'vintage', 1987, 2);
+
+insert into book values(3, 'The Road', 'Cormac McCarthy', ' vintage', 2006, 1);
+
+select * from book;
+
+create table employee(empid number primary key, name varchar(20) not null, position varchar(20), email varchar(20) unique not null);
+
+insert into employee values(1,'Kiran', 'Librarian', 'kiran@abc.com');
+
+insert into employee values(2,'Rahul', 'Librarian', 'rahul@abc.com');
+
+select * from employee;
